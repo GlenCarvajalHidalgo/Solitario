@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Solitario</title>
+</head>
+<body id="pp">
+    <main>
+        <button id="startbtn" class="btn">Start</button>
+        <h2 id="movements" class="text movements">0</h2>
+        <h2 id="timer" class="text timer">00:00:00</h2>
+        <section class="cards">
+            <div class="card" id="0" value="1">
+                <img src="/imgs/A-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="1" value="1">
+                <img src="/imgs/A-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="2" value="1">
+                <img src="/imgs/A-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="3" value="1">
+                <img src="/imgs/A-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="4" value="1">
+                <img src="/imgs/2-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="5" value="1">
+                <img src="/imgs/2-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="6" value="1">
+                <img src="/imgs/2-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="7" value="1">
+                <img src="/imgs/2-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="8" value="1">
+                <img src="/imgs/3-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="9" value="1">
+                <img src="/imgs/3-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="10" value="1">
+                <img src="/imgs/3-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="11" value="1">
+                <img src="/imgs/3-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="12" value="1">
+                <img src="/imgs/4-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="13" value="1">
+                <img src="/imgs/4-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="14" value="1">
+                <img src="/imgs/4-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="15" value="1">
+                <img src="/imgs/4-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="16" value="1">
+                <img src="/imgs/5-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="17" value="1">
+                <img src="/imgs/5-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="18" value="1">
+                <img src="/imgs/5-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="19" value="1">
+                <img src="/imgs/5-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="20" value="1">
+                <img src="/imgs/6-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="21" value="1">
+                <img src="/imgs/6-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="22" value="1">
+                <img src="/imgs/6-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="23" value="1">
+                <img src="/imgs/6-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="24" value="1">
+                <img src="/imgs/7-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="25" value="1">
+                <img src="/imgs/7-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="26" value="1">
+                <img src="/imgs/7-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="27" value="1">
+                <img src="/imgs/7-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="28" value="1">
+                <img src="/imgs/8-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="29" value="1">
+                <img src="/imgs/8-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="30" value="1">
+                <img src="/imgs/8-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="31" value="1">
+                <img src="/imgs/8-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="32" value="1">
+                <img src="/imgs/9-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="33" value="1">
+                <img src="/imgs/9-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="34" value="1">
+                <img src="/imgs/9-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="35" value="1">
+                <img src="/imgs/9-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="36" value="1">
+                <img src="/imgs/10-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="37" value="1">
+                <img src="/imgs/10-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="38" value="1">
+                <img src="/imgs/10-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="39" value="1">
+                <img src="/imgs/10-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="40" value="1">
+                <img src="/imgs/J-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="41" value="1">
+                <img src="/imgs/J-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="42" value="1">
+                <img src="/imgs/J-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="43" value="1">
+                <img src="/imgs/J-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="44" value="1">
+                <img src="/imgs/Q-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="45" value="1">
+                <img src="/imgs/Q-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="46" value="1">
+                <img src="/imgs/Q-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="47" value="1">
+                <img src="/imgs/Q-Trebol.png" alt="" class="img">
+            </div>
+            <div class="card" id="48" value="1">
+                <img src="/imgs/K-Corazon.png" alt="" class="img">
+            </div>
+            <div class="card" id="49" value="1">
+                <img src="/imgs/K-Diamante.png" alt="" class="img">
+            </div>
+            <div class="card" id="50" value="1">
+                <img src="/imgs/K-Flecha.png" alt="" class="img">
+            </div>
+            <div class="card" id="51" value="1">
+                <img src="/imgs/K-Trebol.png" alt="" class="img">
+            </div>
+
+        </section>
+        <section class="marks">
+            <div class="marks1">
+                <div id="mark1" class="mark"></div>
+                <div class="mark margin"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+            </div>
+            <div class="marks2">
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+                <div class="mark"></div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
+<!--onmousedown="Move(event)" onmouseup="StopMove()" onmouseleave="StopMove()"-->
+<!--onmousedown-->
+<!--onmouseenter-->
+<!--onmouseleave-->
+<!--onmousemove-->
+<!--onmouseout-->
+<!--onmouseover-->
+<!--onmouseup-->
+<!--onmousewheel-->

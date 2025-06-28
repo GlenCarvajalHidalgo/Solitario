@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+body{
+    background-color: gainsboro;
+}
+.text{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+}
+.btn{
+    background-color: rgb(49, 168, 49);
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 4px 8px;
+    margin: 8px 0px;
+    position: absolute;
+    transform: scale(130%);
+    top: 650px;
+    left: 605px;
+}
+.btn:hover{
+    background-color: rgb(102, 204, 102);
+    border-color: gray;
+}
+.timer{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+}
+.movements{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    position: absolute;
+    height: 170px;
+    width: 128px;
+    /*border: 2px solid gray;*/
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    /*transition: 0.1s;*/
+    z-index: 1;
+    overflow: hidden;
+    transform: translate3d(90px, 90px, 0px);
+    /*animation-name: animacion3;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;*/
+
+    display: flex;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    z-index: 10;
+}
+.img{
+    width: 100%;
+    z-index: -10;
+}
+.front{
+    background-color: white;
+}
+.back{
+    background-color: blue;
+}
+
+
+
+
+.marks{
+    position: absolute;
+    /*border: 2px solid black;*/
+    top: 100px;
+    left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.marks1{
+    display: flex;
+    gap: 30px;
+}
+.marks2{
+    display: flex;
+    gap: 30px;
+}
+.mark{
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    height: 160px;
+    width: 118px;
+    border-radius: 11px;
+}
+.mark:hover{
+    border-color: gray;
+}
+.margin{
+    margin-left: 312px;
+}
+
+@keyframes animacion{
+    0% {transform: translateX(800px), translateY(800px)}
+    100% {transform: translateY()}
+}
+@keyframes animacion2{
+    0% {transform: scaleX(100%)}
+    50% {transform: scaleX(0%)}
+    100% {transform: scaleX(100%)}
+}
+@keyframes animacion3{
+    0% {width: 128px;
+        margin-left: 0px;}
+    50% {width: 0px;
+        margin-left: 64px;}
+    100% {width: 128px;
+        margin-left: 0px;}
+}
