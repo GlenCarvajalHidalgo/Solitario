@@ -292,7 +292,7 @@ startButton.addEventListener('click', function(){
             randNumbers.push(rand);
 
             if(z<i){
-                cards[rand].childNodes[1].setAttribute('src', '/imgs/Reverso.png');
+                cards[rand].childNodes[1].setAttribute('src', './imgs/Reverso.png');
                 cards[rand].value = '0';
             }
 
@@ -314,7 +314,7 @@ startButton.addEventListener('click', function(){
 
             cards[marksValues[1].cards[i]].style.transition = '0.15s';
             cards[marksValues[1].cards[i]].style.transform = 'translate3d(90px, 91px, 0px)';
-            cards[marksValues[1].cards[i]].childNodes[1].setAttribute('src', '/imgs/Reverso.png');
+            cards[marksValues[1].cards[i]].childNodes[1].setAttribute('src', './imgs/Reverso.png');
             cards[marksValues[1].cards[i]].value = '0';
             cards[marksValues[1].cards[i]].style.zIndex = zIndex++;
             marksValues[0].cards.push(marksValues[1].cards[i]);
@@ -327,7 +327,7 @@ startButton.addEventListener('click', function(){
 
     //Desordenar las cartas. Suffle the cards
     for (let i = 0; i < marksValues[0].cards.length; i++) {
-        cards[marksValues[0].cards[i]].childNodes[1].setAttribute('src', '/imgs/Reverso.png');
+        cards[marksValues[0].cards[i]].childNodes[1].setAttribute('src', './imgs/Reverso.png');
         cards[marksValues[0].cards[i]].value = '0';
         cards[marksValues[0].cards[i]].style.zIndex = Math.floor(Math.random()*24+1);
     }
